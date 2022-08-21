@@ -2,6 +2,9 @@
 
 This is a recipe for training a model for [molske](https://github.com/yamnor/molske) to detect molecules drawn with _hexagon-shaped_ **atoms** and _hand-drawn_ **bonds** using the YOLOv5 algorithm on the Google Colab server.
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yamnor/molske-model/blob/main/molske_model.ipynb)
+
+
 ```
 !git clone https://github.com/yamnor/molske-model
 %cd molske-model
