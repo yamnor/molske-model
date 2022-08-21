@@ -4,20 +4,22 @@ This is a recipe for training a model to detect molecules drawn with _hexagon-sh
 
 ```
 !git clone https://github.com/yamnor/molske-model
-!cd molske-model
+%cd molske-model
+```
+
+```
 !python molske-model.py 1000
 ```
 
 ```
 !git clone https://github.com/ultralytics/yolov5
-!cd yolov5
+%cd yolov5
 !pip install -r requirements.txt
-!cd..
+%cd..
 ```
 
 ```
 !pip install wandb
-!wandb online
 ```
 
 ```
@@ -25,5 +27,5 @@ This is a recipe for training a model to detect molecules drawn with _hexagon-sh
 ```
 
 ```
-!python yolov5/detect.py --source test.jpg --conf 0.5 --weights 'molcaptor/train/weights/best.pt' --project 'molske' --name 'detect' --exist-ok
+!python yolov5/detect.py --source example.jpg --conf 0.5 --weights 'molske/train/weights/best.pt' --project 'molske' --name 'detect' --exist-ok
 ```
